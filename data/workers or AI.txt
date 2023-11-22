@@ -1,0 +1,281 @@
+﻿The public’s understanding of artificial intelligence (AI) is largely shaped by
+pop culture — by blockbuster movies like “The Terminator” and their
+doomsday scenarios of machines going rogue and destroying humanity. This
+kind of AI narrative is also what grabs the attention of news outlets: a Google
+engineer claiming that its chatbot was sentient was among the most
+discussed AI-related news in recent months, even reaching Stephen
+Colbert’s millions of viewers. But the idea of superintelligent machines with
+their own agency and decision-making power is not only far from reality — it
+distracts us from the real risks to human lives surrounding the development
+and deployment of AI systems. While the public is distracted by the specter
+of nonexistent sentient machines, an army of precarized workers stands
+behind the supposed accomplishments of artificial intelligence systems
+today.
+Many of these systems are developed by multinational corporations located
+in Silicon Valley, which have been consolidating power at a scale that,
+journalist Gideon Lewis-Kraus notes, is likely unprecedented in human
+history. They are striving to create autonomous systems that can one day
+perform all of the tasks that people can do and more, without the required
+salaries, benefits or other costs associated with employing humans. While
+this corporate executives’ utopia is far from reality, the march to attempt its
+realization has created a global underclass, performing what anthropologist
+Mary L. Gray and computational social scientist Siddharth Suri call ghost
+work: the downplayed human labor driving “AI”.
+Tech companies that have branded themselves “AI first” depend on heavily
+surveilled gig workers like data labelers, delivery drivers and content
+moderators. Startups are even hiring people to impersonate AI systems like
+chatbots, due to the pressure by venture capitalists to incorporate so-called
+AI into their products. In fact, London-based venture capital firm MMC
+Ventures surveyed 2,830 AI startups in the EU and found that 40% of them
+didn’t use AI in a meaningful way.
+Far from the sophisticated, sentient machines portrayed in media and pop
+culture, so-called AI systems are fueled by millions of underpaid workers
+around the world, performing repetitive tasks under precarious labor
+conditions. And unlike the “AI researchers” paid six-figure salaries in Silicon
+Valley corporations, these exploited workers are often recruited out of
+impoverished populations and paid as little as $1.46/hour after tax. Yet
+despite this, labor exploitation is not central to the discourse surrounding the
+ethical development and deployment of AI systems. In this article, we give
+examples of the labor exploitation driving so-called AI systems and argue
+that supporting transnational worker organizing efforts should be a priority in
+discussions pertaining to AI ethics.
+We write this as people intimately connected to AI-related work. Adrienne is
+a former Amazon delivery driver and organizer who has experienced the
+harms of surveillance and unrealistic quotas established by automated
+systems. Milagros is a researcher who has worked closely with data workers,
+especially data annotators in Syria, Bulgaria and Argentina. And Timnit is a
+researcher who has faced retaliation for uncovering and communicating the
+harms of AI systems.
+Treating Workers Like Machines
+Much of what is currently described as AI is a system based on statistical
+machine learning, and more specifically, deep learning via artificial neural
+networks, a methodology that requires enormous amounts of data to “learn”
+from. But around 15 years ago, before the proliferation of gig work, deep
+learning systems were considered merely an academic curiosity, confined to
+a few interested researchers.
+In 2009, however, Jia Deng and his collaborators released the ImageNet
+dataset, the largest labeled image dataset at the time, consisting of images
+scraped from the internet and labeled through Amazon’s newly introduced
+Mechanical Turk platform. Amazon Mechanical Turk, with the motto “artificial
+artificial intelligence,” popularized the phenomenon of “crowd work”: large
+volumes of time-consuming work broken down into smaller tasks that can
+quickly be completed by millions of people around the world. With the
+introduction of Mechanical Turk, intractable tasks were suddenly made
+feasible; for example, hand-labeling one million images could be
+automatically executed by a thousand anonymous people working in parallel,
+each labeling only a thousand images. What’s more, it was at a price even a
+university could afford: crowdworkers were paid per task completed, which
+could amount to merely a few cents.
+“So-called AI systems are fueled by millions of underpaid workers around
+the world, performing repetitive tasks under precarious labor conditions.”
+The ImageNet dataset was followed by the ImageNet Large Scale Visual
+Recognition Challenge, where researchers used the dataset to train and test
+models performing a variety of tasks like image recognition: annotating an
+image with the type of object in the image, such as a tree or a cat. While
+non-deep-learning-based models performed these tasks with the highest
+accuracy at the time, in 2012, a deep-learning-based architecture informally
+dubbed AlexNet scored higher than all other models by a wide margin. This
+catapulted deep-learning-based models into the mainstream, and brought
+us to today, where models requiring lots of data, labeled by low-wage gig
+workers around the world, are proliferated by multinational corporations. In
+addition to labeling data scraped from the internet, some jobs have gig
+workers supply the data itself, requiring them to upload selfies, pictures of
+friends and family or images of the objects around them.
+Unlike in 2009, when the main crowdworking platform was Amazon’s
+Mechanical Turk, there is currently an explosion of data labeling companies.
+These companies are raising tens to hundreds of millions in venture capital
+funding while the data labelers have been estimated to make an average of
+$1.77 per task. Data labeling interfaces have evolved to treat crowdworkers
+like machines, often prescribing them highly repetitive tasks, surveilling their
+movements and punishing deviation through automated tools. Today, far
+from an academic challenge, large corporations claiming to be “AI first” are
+fueled by this army of underpaid gig workers, such as data laborers, content
+moderators, warehouse workers and delivery drivers.
+Content moderators, for example, are responsible for finding and flagging
+content deemed inappropriate for a given platform. Not only are they
+essential workers, without whom social media platforms would be
+completely unusable, their work flagging different types of content is also
+used to train automated systems aiming to flag texts and imagery containing
+hate speech, fake news, violence or other types of content that violates
+platforms’ policies. In spite of the crucial role that content moderators play in
+both keeping online communities safe and training AI systems, they are often
+paid miserable wages while working for tech giants and forced to perform
+traumatic tasks while being closely surveilled.
+Every murder, suicide, sexual assault or child abuse video that does not
+make it onto a platform has been viewed and flagged by a content
+moderator or an automated system trained by data most likely supplied by a
+content moderator. Employees performing these tasks suffer from anxiety,
+depression and post-traumatic stress disorder due to constant exposure to
+this horrific content.
+Besides experiencing a traumatic work environment with nonexistent or
+insufficient mental health support, these workers are monitored and
+punished if they deviate from their prescribed repetitive tasks. For instance,
+Sama content moderators contracted by Meta in Kenya are monitored
+through surveillance software to ensure that they make decisions about
+violence in videos within 50 seconds, regardless of the length of the video or
+how disturbing it is. Some content moderators fear that failure to do so could
+result in termination after a few violations. “Through its prioritization of
+speed and efficiency above all else,” Time Magazine reported, “this policy
+might explain why videos containing hate speech and incitement to violence
+have remained on Facebook’s platform in Ethiopia.”
+Similar to social media platforms which would not function without content
+moderators, e-commerce conglomerates like Amazon are run by armies of
+warehouse workers and delivery drivers, among others. Like content
+moderators, these workers both keep the platforms functional and supply
+data for AI systems that Amazon may one day use to replace them: robots
+that stock packages in warehouses and self-driving cars that deliver these
+packages to customers. In the meantime, these workers must perform
+repetitive tasks under the pressure of constant surveillance — tasks that, at
+times, put their lives at risk and often result in serious musculoskeletal
+injuries.
+“Data labeling interfaces have evolved to treat crowdworkers like machines,
+often prescribing them highly repetitive tasks, surveilling their movements
+and punishing deviation through automated tools.”
+Amazon warehouse employees are tracked via cameras and their inventory
+scanners, and their performance is measured against the times managers
+determine every task should take, based on aggregate data from everyone
+working at the same facility. Time away from their assigned tasks is tracked
+and used to discipline workers.
+Like warehouse workers, Amazon delivery drivers are also monitored through
+automated surveillance systems: an app called Mentor tallies scores based
+on so-called violations. Amazon’s unrealistic delivery time expectations push
+many drivers to take risky measures to ensure that they deliver the number
+of packages assigned to them for the day. For instance, the time it takes
+someone to fasten and unfasten their seatbelt some 90-300 times a day is
+enough to put them behind schedule on their route. Adrienne and many of
+her colleagues buckled their seat belts behind their backs, so that the
+surveillance systems registered that they were driving with a belt on, without
+getting slowed down by actually driving with a belt on.
+In 2020, Amazon drivers in the U.S. were injured at a nearly 50% higher rate
+than their United Parcel Service counterparts. In 2021, Amazon drivers were
+injured at a rate of 18.3 per 100 drivers, up nearly 40% from the previous
+year. These conditions aren’t only dangerous for delivery drivers —
+pedestrians and car passengers have been killed and injured in accidents
+involving Amazon delivery drivers. Some drivers in Japan recently quit in
+protest because they say Amazon’s software sent them on “impossible
+routes,” leading to “unreasonable demands and long hours.” In spite of these
+clear harms, however, Amazon continues to treat its workers like machines.
+In addition to tracking its workers through scanners and cameras, last year,
+the company required delivery drivers in the U.S. to sign a “biometric
+consent” form, granting Amazon permission to use AI-powered cameras to
+monitor drivers’ movements — supposedly to cut down on distracted driving
+or speeding and ensure seatbelt usage. It’s only reasonable for workers to
+fear that facial recognition and other biometric data could be used to perfect
+worker-surveillance tools or further train AI — which could one day replace
+them. The vague wording in the consent forms leaves the precise purpose
+open for interpretation, and workers have suspected unwanted uses of their
+data before (though Amazon denied it).
+The “AI” industry runs on the backs of these low-wage workers, who are kept
+in precarious positions, making it hard, in the absence of unionization, to
+push back on unethical practices or demand better working conditions for
+fear of losing jobs they can’t afford to lose. Companies make sure to hire
+people from poor and underserved communities, such as refugees,
+incarcerated people and others with few job options, often hiring them
+through third party firms as contractors rather than as full time employees.
+While more employers should hire from vulnerable groups like these, it is
+unacceptable to do it in a predatory manner, with no protections.
+“AI ethics researchers should analyze harmful AI systems as both causes
+and consequences of unjust labor conditions in the industry.”
+Data labeling jobs are often performed far from the Silicon Valley
+headquarters of “AI first” multinational corporations — from Venezuela,
+where workers label data for the image recognition systems in self-driving
+vehicles, to Bulgaria, where Syrian refugees fuel facial recognition systems
+with selfies labeled according to race, gender, and age categories. These
+tasks are often outsourced to precarious workers in countries like India,
+Kenya, the Philippines or Mexico. Workers often do not speak English but are
+provided instructions in English, and face termination or banning from
+crowdwork platforms if they do not fully understand the rules.
+These corporations know that increased worker power would slow down
+their march toward proliferating “AI” systems requiring vast amounts of data,
+deployed without adequately studying and mitigating their harms. Talk of
+sentient machines only distracts us from holding them accountable for the
+exploitative labor practices that power the “AI” industry.
+An Urgent Priority For AI Ethics
+While researchers in ethical AI, AI for social good, or human-centered AI
+have mostly focused on “debiasing” data and fostering transparency and
+model fairness, here we argue that stopping the exploitation of labor in the AI
+industry should be at the heart of such initiatives. If corporations are not
+allowed to exploit labor from Kenya to the U.S., for example, they will not be
+able to proliferate harmful technologies as quickly — their market
+calculations would simply dissuade them from doing so.
+Thus, we advocate for funding of research and public initiatives that aim to
+uncover issues at the intersection of labor and AI systems. AI ethics
+researchers should analyze harmful AI systems as both causes and
+consequences of unjust labor conditions in the industry. Researchers and
+practitioners in AI should reflect on their use of crowdworkers to advance
+their own careers, while the crowdworkers remain in precarious conditions.
+Instead, the AI ethics community should work on initiatives that shift power
+into the hands of workers. Examples include co-creating research agendas
+with workers based on their needs, supporting cross-geographical labor
+organizing efforts and ensuring that research findings are easily accessed by
+workers rather than confined to academic publications. The Turkopticon
+platform created by Lilly Irani and M. Six Silberman, “an activist system that
+allows workers to publicize and evaluate their relationships with employers,”
+is a great example of this.
+Journalists, artists, and scientists can help by drawing clear the connection
+between labor exploitation and harmful AI products in our everyday lives,
+fostering solidarity with and support for gig workers and other vulnerable
+worker populations. Journalists and commentators can show the general
+public why they should care about the data annotator in Syria or the
+hypersurveilled Amazon delivery driver in the U.S. Shame does work in
+certain circumstances and, for corporations, the public’s sentiment of
+“shame on you” can sometimes equal a loss in revenue and help move the
+needle toward accountability.
+Supporting transnational worker organizing should be at the center of the
+fight for “ethical AI.” While each workplace and geographical context has its
+own idiosyncrasies, knowing how workers in other locations circumvented
+similar issues can serve as inspiration for local organizing and unionizing
+efforts. For example, data labelers in Argentina could learn from the recent
+unionizing efforts of content moderators in Kenya, or Amazon Mechanical
+Turk workers organizing in the U.S., and vice versa. Furthermore, unionized
+workers in one geographic location can advocate for their more precarious
+counterparts in another, as in the case of the Alphabet Workers Union, which
+includes both high paid employees in Silicon Valley and outsourced low
+wage contractors in more rural areas.
+“This type of solidarity between highly-paid tech workers and their lower-
+paid counterparts — who vastly outnumber them — is a tech CEO’s
+nightmare.”
+This type of solidarity between highly-paid tech workers and their lower-paid
+counterparts — who vastly outnumber them — is a tech CEO’s nightmare.
+While corporations often treat their low-income workers as disposable,
+they’re more hesitant to lose their high-income employees who can quickly
+snap up jobs with competitors. Thus, the high-paid employees are allowed a
+far longer leash when organizing, unionizing, and voicing their
+disappointment with company culture and policies. They can use this
+increased security to advocate with their lower-paid counterparts working at
+warehouses, delivering packages or labeling data. As a result, corporations
+seem to use every tool at their disposal to isolate these groups from each
+other.
+Emily Cunningham and Maren Costa created the type of cross-worker
+solidarity that scares tech CEOs. Both women worked as user experience
+designers at Amazon’s Seattle headquarters cumulatively for 21 years. Along
+with other Amazon corporate workers, they co-founded the Amazon
+Employees for Climate Justice (AECJ). In 2019, over 8,700 Amazon workers
+publicly signed their names to an open letter addressed to Jeff Bezos and
+the company’s board of directors demanding climate leadership and
+concrete steps the company needed to implement to be aligned with climate
+science and protect workers. Later that year, AECJ organized the first
+walkout of corporate workers in Amazon’s history. The group says over
+3,000 Amazon workers walked out across the world in solidarity with a
+youth-led Global Climate Strike.
+Amazon responded by announcing its Climate Pledge, a commitment to
+achieve net-zero carbon by 2040 — 10 years ahead of the Paris Climate
+Agreement. Cunningham and Costa say they were both disciplined and
+threatened with termination after the climate strike — but it wasn’t until AECJ
+organized actions to foster solidarity with low-wage workers that they were
+actually fired. Hours after another AECJ member sent out a calendar invite
+inviting corporate workers to listen to a panel of warehouse workers
+discussing the dire working conditions they were facing at the beginning of
+the pandemic, Amazon fired Costa and Cunningham. The National Labor
+Relations Board found their firings were illegal, and the company later settled
+with both women for undisclosed amounts. This case illustrates where
+executives’ fears lie: the unflinching solidarity of high-income employees
+who see low-income employees as their comrades.
+In this light, we urge researchers and journalists to also center low-income
+workers’ contributions in running the engine of “AI” and to stop misleading
+the public with narratives of fully autonomous machines with human-like
+agency. These machines are built by armies of underpaid laborers around
+the world. With a clear understanding of the labor exploitation behind the
+current proliferation of harmful AI systems, the public can advocate for
+stronger labor protections and real consequences for entities who break
+them.

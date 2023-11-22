@@ -1,0 +1,674 @@
+﻿Page
+1
+of 19
+Moderating the Fediverse: Content Moderation on Dis-
+tributed Social Media
+Alan Z. Rozenshtein*
+Forthcoming in 2 Journal of Free Speech Law (2023)
+Current approaches to content moderation generally assume the contin-
+ued dominance of “walled gardens”: social media platforms that control
+who can use their services and how. Whether the discussion is about self-
+regulation, quasi-public regulation (e.g., Facebook’s oversight board), gov-
+ernment regulation, tort law (including changes to Section 230), or antitrust
+enforcement, the assumption is that the future of social media will remain
+a matter of incremental reforms to a small group of giant, closed platforms.
+But, viewed from the perspective of the broader history of the Internet, the
+dominance of closed platforms is an aberration. The Internet initially grew
+around a set of open, decentralized applications, many of which remain
+central to its functioning today.
+Email is an instructive example Although email is hardly without
+its content-moderation issues—spam, in particular, has been an ongoing
+problem—there is far less discussion about email’s content-moderation
+issues than about social media’s. Part of this is because email lacks some of
+the social features that can make social media particularly toxic. But it is also
+because email’s architecture simply doesn’t permit the sort of centralized,
+*Associate Professor of Law, University of Minnesota (azr@umn.edu, @arozen-
+shtein@mastodon.social). I am grateful for helpful comments from Laura Edelson,
+Kyle Langvardt, Erin Miller, Chinny Sharma, and from participants at presentations
+at Indiana University’s Center for Applied Cybersecurity Research, the Seton Hall
+Law School Big Tech and Antitrust Conference, the Information Society Project and
+the Freedom of Expression Scholars Conference at Yale Law School, the Association
+for Computing Machinery (ACM) Symposium on Computer Science and Law, the
+Max Weber Programme Multidisciplinary Research Workshop at the European
+University Institute, and the Junior Law and Technology Scholars’ Workshop. For
+excellent research assistance I thank Caleb Johnson and Isabel Park.
+Electronic copy available at: https://ssrn.com/abstract=4213674
+Draft: 23-Nov-22 Moderating the Fediverse 2
+top-down moderation that social-media platforms can perform. If ought
+implies can, then can’t implies need not. There is a limit to how heated
+the debates around email content moderation can be, because there’s an
+architectural limit to how much email moderation is possible. This raises the
+intriguing possibility of what social media, and its accompanying content-
+moderation issues, would look like if it, too, operated as a decentralized
+protocol.
+Fortunately we don’t have to speculate, because decentralized social media
+already exists, in the form of the “Fediverse”—a portmanteau of “federation”
+and “universe.” Much like the decentralized infrastructure of the Internet,
+in which the HTTP communication protocol facilitates the retrieval and in-
+teraction of webpages that are stored on servers around the world, Fediverse
+protocols power “instances,” which are comparable to social media appli-
+cations and services. The most important Fediverse protocol is ActivityPub,
+which powers the most popular Fediverse apps, notably the Twitter-like mi-
+croblogging service Mastodon, which has over a million active users and
+continues to grow, especially in the wake of Elon Musk’s purchase of Twitter.1
+Even the major social media companies are recognizing the importance of
+decentralization and open protocols. The Twitter-backed Bluesky initiative is
+in the research phase of developing a decentralized social network protocol,2
+and Meta’s Mark Zuckerberg has recognized the importance of an “open,
+interoperable metaverse” (though how far this commitment to openness will
+go remains to be seen).3
+Building on an emerging literature around decentralized social media,4
+1See Barbara Ortutay, Twitter Drama Too Much? Mastodon, Others Emerge as Options,
+AP (Nov. 12, 2012).
+2See ATProtocol, https://perma.cc/XHP3-G6K6.
+3Andrew Hayward, An “Open, Interoperable” Metaverse is “Better for Everyone”: Meta’s
+Mark Zuckerberg, Yahoo! News (Oct. 11, 2022).
+4See, e.g., Mike Masnick, Protocols, Not Platforms: A Technological Approach to Free
+Speech, Knight First Amendment Inst. at Colum. Univ. (2019), https://perma.cc/
+J2QD-YVF7; Francis Fukuyama et al., Middleware for Dominant Digital Platforms:
+A Technological Solution to a Threat to Democracy, Stan. Cyber Pol’y Ctr. (2021),
+https://perma.cc/S54K-JVEX; Daphne Kellar, The Future of Platform Power: Making
+Middleware Work, 32 J. Democracy 168 (2021); Chand Rajendra-Nicolucci & Ethan
+Zuckerman, What If Social Media Worked More Like Email?, in An Illustrated Field
+Guide to Social Media 24 (Chand Rajendra-Nicolucci & Ethan Zuckerman eds.,
+Electronic copy available at: https://ssrn.com/abstract=4213674
+Draft: 23-Nov-22 Moderating the Fediverse 3
+this brief essay seeks to give an overview of the Fediverse, its benefits and
+drawbacks, and how government action can influence and encourage its
+development. In doing so it. Part I describes the Fediverse and how it works,
+first distinguishing open from closed protocols and then describing the
+current Fediverse ecosystem. Part II looks at the specific issue of content
+moderation on the Fediverse, using Mastodon as a case study to draw out
+the advantages and disadvantages of the federated content-moderation ap-
+proach as compared to the current dominant closed-platform model. Part III
+considers how policymakers can encourage the Fediverse, whether through
+direct regulation, antitrust enforcement, or liability shields.
+I. Closed Platforms and Decentralized Alternatives
+A. A Brief History of the Internet
+A core architectural building block of the Internet is the open protocol. A protocol
+is the rules that govern the transmission of data. The Internet consists of many
+such protocols, ranging from those that direct the physical transmission of
+data to those that govern the most common Internet applications, like email
+or web browsing. Crucially, all these protocols are open, in that anyone can
+set up and operate a router, website, or email server without needing to
+register with or get permission from a central authority.5 Open protocols
+were key to the first phase of the Internet’s growth because they enabled
+unfettered access, removing barriers and bridging gaps between different
+communities. This enabled and encouraged interactions between groups
+with various interests and knowledge, resulting in immense creativity and
+idea-sharing.
+But starting in the mid-2000s, a new generation of closed platforms—first
+2021), https://perma.cc/F3LC-LGR4; Robert W. Gehl & Diana Zulli, The Digital
+Covenant: Non-Centralized Platform Governance on the Mastodon Social Network, Info.,
+Commc’n & Soc’y (forthcoming), https://doi.org/10.17613/1b0d-kb17.
+5The distinction between open and closed protocols is not clear-cut. Some of the core
+technology behind the Internet—for example, the Domain Name System, which
+maps IP addresses to human-readable domain names—has a centralized registra-
+tion system. But this system imposes relatively minimal control, and the entity that
+runs it, the Internet Corporation for Assigned Names and Numbers (ICANN), is a
+multistakeholder nonprofit that prioritizes openness and interoperability.
+Electronic copy available at: https://ssrn.com/abstract=4213674
+Draft: 23-Nov-22 Moderating the Fediverse 4
+Facebook, YouTube, and Twitter, and later Instagram, WhatsApp, and TikTok—
+came to dominate the Internet habits of most users.6 Today, individuals spend
+an average of seven hours online a day, and approximately 35% of that time
+is spent on closed social media platforms.7 Although social media platforms
+use the standard Internet protocols to communicate with their users—from
+the perspective of the broader Internet, they just operate as massive web
+servers—their internal protocols are closed. There’s no Facebook protocol
+that you could use to run your own Facebook server, communicating with
+other Facebook users without Facebook’s permission. Thus, major social
+media platforms are the most important example of the Internet’s steady
+takeover by “walled gardens” over the past two decades.8
+There are many benefits to walled gardens; otherwise, they wouldn’t
+have taken over. Closed systems are attractive for the companies that run
+them because the companies can exert greater control over the platforms
+through content and user moderation. But the draw for platform owners
+is insufficient; only by providing users with a better experience (or at least
+convincing them that their experience is better) could closed platforms have
+come to dominate social media.
+Closed platforms have indeed often provided better experiences for users.
+Following the logic of enclosure, because companies can more thoroughly
+monetize closed platforms, they have a greater incentive to invest more in
+those platforms and provide better user experiences. One can create a Twitter
+account and begin posting tweets and interacting with other users in minutes;
+good luck setting up your own microblogging service from the ground up.
+And because companies have full control over the platform, they can make
+changes more easily—thus, at least in the short term, closed platforms can
+6An early challenge to the open Internet came from the first generation of giant online
+services providers like America Online, Compuserve, and Prodigy, which combined
+dial-up Internet access with an all-encompassing web portal that provided both
+Internet content and messaging. But as Internet speeds increased and web browsing
+improved, users discovered that the limits of these closed systems outweighed their
+benefits, and they faded into irrelevance by the 2000s.
+7Simon Kemp, Digital 2022: Global Overview Report, DataReportal (Jan. 26, 2022),
+https://perma.cc/XM4G-DLND.
+8The other major example of a move to closed system is the dominance of smart-
+phones, which (especially iOS devices) are far more closed than are personal
+computers.
+Electronic copy available at: https://ssrn.com/abstract=4213674
+Draft: 23-Nov-22 Moderating the Fediverse 5
+improve at a faster rate than can open platforms, which often struggle with
+cumbersome, decentralized consensus governance.
+Most important, at least from the perspective of this essay, is closed plat-
+forms’ advantages when it comes to moderation. Closed platforms can be
+moderated centrally, which enables greater control over what appears on
+the network. And the business models of closed platforms allow them to
+deploy economic and technological resources at a scale that open, decentral-
+ized systems simply cannot match. For example, Meta, Facebook’s parent
+company, has spent over $13 billion on “safety and security” efforts since
+the 2016 election, employing, both internally and through contractors, 40,000
+employees on just this issue. And its investments in AI-based content moder-
+ation tools have led it to block billions of fake accounts.9 Content moderation,
+as Tarleton Gillespie notes, “is central to what platforms do, not peripheral”
+and “is, in many ways, the commodity that platforms offer.”10 Indeed, this
+concern with security—whether about malicious code, online abuse, or of-
+fensive speech—is one of the most important drivers of the popularity of
+closed systems.11
+But closed platforms have become a victim of their own success. They
+have exacerbated the costs of malicious action by creating systems that
+are designed to be as frictionless as possible within the network (even if
+access to the network is controlled by the platform). At the same time,
+they have massively increased user expectations of moderation of harmful
+content, because centralization allows (in theory, though not in practice) the
+complete elimination of harmful content in a way that the architecture of an
+open system does not. They impose uniform, top-down standards, which
+inevitably leave many users unsatisfied. And they raise concerns about the
+few giant companies and Silicon Valley CEOs exercising outsized control
+over the public sphere.12
+In other words, large closed platforms are faced with what might be
+9Our Progress Addressing Challenges and Innovating Responsibly, Facebook, (Sept. 21,
+2021), https://perma.cc/3FHT-3TB8.
+10Tarleton Gillespie, Custodians of the Internet: Platforms, Content Mod-
+eration, and the Hidden Decisions That Shape Social Media 13 (2018).
+11Jonathan Zittrain, The Future of the Internet and How to Stop It 59
+(paperback ed. 2008).
+12When Elon Musk first made his bid to purchase Twitter, Twitter co-founder Jack
+Dorsey tweeted:
+Electronic copy available at: https://ssrn.com/abstract=4213674
+Draft: 23-Nov-22 Moderating the Fediverse 6
+called the moderator’s trilemma. The first prong is that platform userbases are
+large and diverse. The second prong is that the platforms use centralized,
+top-down moderation policies and practices. The third prong is that the
+platforms would like to avoid angering large swaths of their users. But the
+past decade of content moderation controversies suggests that these three
+goals can’t all be met. The large closed platforms are unwilling to shrink their
+user bases or give up control over content moderation, so they have tacitly
+accepted high levels of dissatisfaction with their moderation decisions. The
+Fediverse, by contrast, responds to the moderator’s trilemma by giving up
+on centralized moderation.
+B. The Fediverse and its applications
+The term “Fediverse” refers collectively to the protocols, servers, and appli-
+cations that enable decentralized social media. The most popular of these
+protocols is ActivityPub, which is developed by the World Wide Web Consor-
+tium, the main international standards organization for the World Wide Web
+that has also developed the HTML, XML, and other foundational Internet
+standards.13
+To understand how ActivityPub operates, it’s important to appreciate
+that all social-media platforms are built around the same core components:
+users creating and interacting with pieces of content, whether posts (Face-
+book), tweets (Twitter), messages (WhatsApp), images (Instagram), or videos
+(YouTube, TikTok). When a user tweets (for example), they first send the tweet
+to a Twitter server. That Twitter server then distributes that tweet through
+the network to other Twitter users. Like all platforms, Twitter has its own
+In principle, I don’t believe anyone should own or run Twitter. It wants
+to be a public good at a protocol level, not a company. Solving for the
+problem of it being a company however, Elon is the singular solution
+I trust. I trust his mission to extend the light of consciousness.
+@jack, Twitter (Apr. 25, 2022, 9:03 PM), https://perma.cc/VD56-QNRQ. The chaos
+that has roiled Twitter since Musk’s takeover suggests that Dorsey’s faith in Musk’s
+“mission to extend the light of consciousness” was misplaced while underscoring
+the observation that Twitter would be better as “a public good at a protocol level,
+not a company.”
+13ActivityPub, W3C, https://perma.cc/L84U-C5D6.
+Electronic copy available at: https://ssrn.com/abstract=4213674
+Draft: 23-Nov-22 Moderating the Fediverse 7
+internal protocol that processes the data representing the tweet: the tweet’s
+content plus metadata like the user handle, the time the tweet was made,
+and any restrictions on who can see or reply to the tweet.
+ActivityPub generalizes this system. The ActivityPub protocol is flexible
+enough to accommodate different kinds of social media content. This means
+that developers can build different applications on top of the single Activ-
+ityPub protocol; thus, Friendica replicates the main features of Facebook,
+Mastodon of Twitter, and PeerTube of YouTube. But unlike legacy social
+media platforms, which do not naturally interoperate—one can embed a
+YouTube link in a tweet, but Twitter sees the YouTube content as just another
+URL, rather than a type of content that Twitter can directly interact with—all
+applications built on top of ActivityPub have, in principle, access to the same
+ActivityPub data, allowing for a greater integration of content.14
+The most important feature of ActivityPub is that is decentralized. The
+servers that users communicate with and that send content around the
+network are independently owned and operated. Anyone can create and
+run an ActivityPub server—generally called an “instance”—as long as they
+follow the ActivityPub protocol. This is the key feature distinguishing closed
+platforms like Twitter or Facebook from open platforms like ActivityPub—or
+email or the World Wide Web, for that matter: anyone can run an email server
+or web server if they follow the relevant protocols.
+ActivityPub’s decentralized nature means that instance can choose what
+content flows across its network and use different content-moderation stan-
+dards. An instance can even choose to block certain users, types of media
+(e.g., videos or images), or entire instances. At the same time, each instance’s
+content-moderation decisions are locally scoped. No instance can control
+the behavior of any other instance, and there is no central authority that can
+decide which instances are valid or that can ban a user or a piece of content
+from the ActivityPub network entirely. As long as someone is willing to
+host an instance and allow certain content on that instance, it exists on the
+ActivityPub network.
+14For example, as PeerTube, a video sharing platform, notes, “you can follow a
+PeerTube user from Mastodon (the latest videos from the PeerTube account you
+follow will appear in your feed), and even comment on a PeerTube-hosted video
+directly from your Mastodon’s account.” PeerTube, https://perma.cc/RT9C-9TVH
+(last visited Sept. 6, 2022).
+Electronic copy available at: https://ssrn.com/abstract=4213674
+Draft: 23-Nov-22 Moderating the Fediverse 8
+This leads to what I call a model of content-moderation subsidiarity. Just as
+the general principle of political subsidiarity holds that decisions should be
+made at the lowest organizational level capable of making such decisions,15
+content-moderation subsidiarity devolves decisions to the individual in-
+stances that make up the overall network.
+A key guarantor of content-moderation subsidiarity is the ability of users
+to switch instances if, for example, they are dissatisfied with how their current
+instance moderates content. When a user decides to moves instances, they
+migrate their account data—including their blocked, muted, and follower
+users lists and post history—and their followers will automatically refollow
+them at their new account.16 Thus, migrating from one Mastodon instance to
+another does not require starting from scratch. The result is that, although
+Fediverse instances show some of the clustering that is characteristic of the
+Internet as a whole,17 no single instance monopolizes the network.18
+Using Albert Hirschman’s theory of how individuals respond to dissatis-
+faction with their organizations,19 we can say that the fediverse empowers
+users to exercise powers of voice and exit more readily and meaningfully than
+they could on a centralized social media platform. Rather than simply put
+up with dissatisfactions, the Fediverse permits users to choose the instance
+that best suits them (exit) and to use that leverage to participate in instance
+governance (voice). Of course, users on closed platforms can (and frequently
+do) express their grievances with how the platform is moderated—perhaps
+most notably on Twitter, where a common, and ironic, subject for tweets is
+how terrible Twitter is—but such “affective voice” is far less likely to lead to
+15See generally Andreas Føllesdal, Subsidiarity, 6 J. Pol. Phil. 190 (1998).
+16How to Migrate from One Server to Another, Mastodon, https://perma.cc/
+Y4XY-KM6W (last visited Sept.. 6, 2022).
+17See Lada A. Adamic & Bernardo A. Huberman, Zipf’s Law and the Internet, 3
+Glottometrics 143, 147-48 (2002) (“[T]there are many small elements contained
+within the Web, but few large ones. A few sites consist of millions of pages, but
+millions of sites only contain a handful of pages. Few sites contain millions of links,
+but many sites have one or two. Millions of users flock to a few select sites, giving
+little attention to millions of others.”).
+18A list of Mastodon instances, sorted by number of users, is available at https://
+perma.cc/S8JU-GGTW (last visited Nov. 17, 2022).
+19See Albert O. Hirschman, Exit, Voice, and Loyalty: Responses to Decline in
+Firms, Organizations, and States (1970).
+Electronic copy available at: https://ssrn.com/abstract=4213674
+Draft: 23-Nov-22 Moderating the Fediverse 9
+meaningful change than the “effective voice” that the Fediverse enables.20
+Some existing platforms, though they remain centralized in most respects,
+have enhanced users’ voice and exit privileges by decentralizing their mod-
+eration practices. The popular message-board website Reddit, for example,
+grants substantial autonomy to its various subreddits, each of which has its
+own moderators. Indeed, Reddit is frequently held up as the most prominent
+example of bottom-up, community-based content moderation.21 One might
+ask, then, whether the Fediverse offers anything beyond what already exists
+on Reddit and other sites, like Wikipedia, that enable user moderation.
+The Fediverse indeed does, because its decentralization is a matter of
+architecture, not just policy. A subreddit moderator has control only insofar as
+Reddit, a soon-to-be public company,22 permits that control. Because Reddit
+can moderate any piece of content—indeed, to ban a subreddit outright—
+no matter whether the subreddit moderator agrees, it is subject to public
+pressure to do so. Perhaps the most famous example is Reddit’s banning of
+the controversial pro-Trump r/The_Donald subreddit several months before
+the 2020 election.23
+Taken as a whole, the architecture of the Fediverse represents a challenge
+not only to the daily operations of incumbent platforms, but also to their
+very theoretical bases. Media scholars Aymeric Mansoux and Roel Roscam
+Abbing have developed what is so far the most theoretically sophisticated
+treatment of the Fediverse’s content-moderation subsidiarity, which they
+characterize as a kind of agonism, the increasingly influential24 model of pol-
+itics that seeks a middle ground between, on the one hand, unrealistic hopes
+of political consensus and, on the other hand, the zero-sum destructiveness
+of antagonism:
+20See Seth Frey & Nathan Schneider, Effective Voice: Beyond Exit and Affect in Online
+Communities, New Media & Soc’y (Sept. 2021).
+21See, e.g., James Grimmelmann, The Virtues of Moderation, 17 Yale J. L. & Tech. 42,
+94–101 (2015).
+22Salvador Rodriguez, Reddit Files to Go Public, MSNBC (Dec. 15, 2021).
+23Mike Isaac, Reddit, Acting Against Hate Speech, Bans “The_Donald” Subreddit, N.Y.
+Times (June 29, 2020).
+24For a recent attempt to bring agonism into the mainstream of legal scholarship,
+see Daniel E. Walters, The Administrative Agon: Democratic Theory for a Conflictual
+Regulatory State, 132 Yale L.J. 1 (2022).
+Electronic copy available at: https://ssrn.com/abstract=4213674
+Draft: 23-Nov-22 Moderating the Fediverse 10
+The bet made by agonism is that by creating a system in which
+a pluralism of hegemonies is permitted, it is possible to move
+from an understanding of the other as an enemy, to the other as a
+political adversary. For this to happen, different ideologies must
+be allowed to materialize via different channels and platforms.
+An important prerequisite is that the goal of political consensus
+must be abandoned and replaced with conflictual consensus . . . .
+Translated to the Fediverse, it is clear that it already contains a
+relatively diverse political landscape and that transitions from
+political consensus to conflictual consensus can be witnessed in
+the way communities relate to one another. At the base of these
+conflictual exchanges are various points of view on the collective
+design and use of the software stack and the underlying protocols
+that would be needed to further enable a sort of online agonistic
+pluralism.25
+The Fediverse is a truly novel evolution in online speech. The question is:
+although it works in theory, does it work in practice?
+II. Content Moderation on the Fediverse
+A. The Mastodon Case Study
+Although the organization that runs the Mastodon project recommends cer-
+tain content-moderation policies,26 each Mastodon instance chooses its own
+content moderation policies. The large, general-interest instances tend to have
+25Aymeric Mansoux & Roel Roscam Abbing, Seven Theses on the Fediverse and the
+Becoming of FLOSS, in The Eternal Network: The Ends and Becomings of
+Network Culture 124, 131 (Kristoffer Gansing & Inga Luchs eds., 2020). For
+an influential general account of agonism, see Chantal Mouffe, Agonistics:
+Thinking the World Politically (2013).
+26Specifically, the Mastodon project has promulgated a “Mastodon Server Covenant,”
+whereby instances that commit to “[a]ctive moderation against racism, sexism,
+homophobia and transphobia” such that users will have “confidence that they are
+joining a safe space, free from white supremacy, anti-semitism and transphobia of
+other platforms” are eligible to be listed on the project’s homepage as recommended
+instances. See Eugen Rochko, Introducing the Mastodon Server Covenant, Mastodon
+(May 16, 2019), https://perma.cc/GP8H-MXXK. But the covenant is not binding on
+Electronic copy available at: https://ssrn.com/abstract=4213674
+Draft: 23-Nov-22 Moderating the Fediverse 11
+fairly generic policies. For example, Mastodon.social bans “racism, sexism,
+homophobia, transphobia, xenophobia, or casteism” as well as “harassment,
+dogpiling or doxxing of other users.”27 By contrast, other instances do not
+specify prohibited categories of content;28 this, of course, does not prevent
+the instance administrators from moderating content on an ad-hoc basis,
+but it does signal a lighter touch. Content moderation can also be based on
+geography and subject-matter; for example, Mastodon.social, which is hosted
+in Germany, explicitly bans content that is illegal in Germany,29 and Switter,
+a “sex work friendly social space” that ran from 2018 to 2022, permitted
+sex work advertisements that mainstream instances generally prohibited.30
+Mastodon instances can also impose various levels of moderation on other
+instances, for example: (1) no moderation (the default); (2) filtered but still
+accessible; (3) instances whose content users can only view if they follow
+users on those instances; and (4) instances that are fully banned.
+Mastodon instances thus operate according to the principle of content-
+moderation subsidiarity: content-moderation standards are set by, and differ
+across, individual instances. Any given Mastodon instance may have rules
+that are far more restrictive than those of the major social media platforms.
+But the network as a whole is substantially more speech protective than
+are any of the major social media platforms, since no user or content can
+be permanently banned from the network and anyone is free to start an
+instance that communicates both with the major Mastodon instances and the
+peripheral, shunned instances.
+The biggest challenge for Mastodon has been Gab, a Twitter-like social
+network that is most popular on the far right. Gab launched in 2016, and, in
+2019, switched its software infrastructure to run on a version of Mastodon,
+in large part to get around Apple and Google banning Gab’s smartphone
+any Mastodon instance, and non-complying instances remain full-fledged member
+of the overall Mastodon network, subject only to the moderation decision of other
+instances.
+27Mastodon.social, https://perma.cc/326M-JW5A (last visited Feb. 14, 2022); see
+also mas.to!, https://perma.cc/TBH6-BKWA (last visited Feb. 14, 2022).
+28See, e.g., Mastodon.cloud, https://perma.cc/7YQQ-ZX87 (last visited Feb. 14,
+2022).
+29Mastodon.social, supra note 27.
+30Switter, https://perma.cc/B8FA-X7JY (last visited June 14, 2022).
+Electronic copy available at: https://ssrn.com/abstract=4213674
+Draft: 23-Nov-22 Moderating the Fediverse 12
+app from their app stores. By switching its infrastructure to Mastodon and
+operating as merely one of Mastodon’s many instances, Gab hoped to be able
+to return to smartphones through Mastodon clients.31
+Gab is a useful case study in how decentralized social media can self-
+police. On the one hand, there was no way for Mastodon to expel Gab
+from the Fediverse. As Mastodon’s founder Eugen Rochko explained, “You
+have to understand it’s not actually possible to do anything platform-wide
+because it’s decentralized. . . . I don’t have the control.”32 On the other hand,
+individual Mastodon instances could—and the most popular ones did—
+refuse to interact with the Gab instance, effectively cutting it off from most
+of the network in a spontaneous, bottom-up process of instance-by-instance
+decisionmaking. Ultimately, Gab was left almost entirely isolated, with more
+than 99% of its users interacting only with other Gab users. Gab responded
+by “defederating”: voluntarily cutting itself off from the remaining instances
+that were still willing to communicate with it.33
+B. Benefits and Drawbacks of Federated Moderation
+As the Gab story demonstrates, the biggest benefit of a decentralized moder-
+ation model is its embrace of content-moderation subsidiarity: each commu-
+nity can choose its own content moderation standards according to its own
+needs and values, while at the same time recognizing and respecting other
+communities’ content-moderation choices. This is in stark contrast to the
+problem faced by large, centralized platforms, which by their nature must
+choose a single moderation standard, which different groups of users will
+inevitably find either under- or overinclusive.
+The difference in business models also lowers the need for content moder-
+ation generally. The business models of the major platforms—selling adver-
+tisements—requires them to maximize “user engagement,” and the discovery
+31Adi Robertson, How the Biggest Decentralized Social Network Is Dealing with Its Nazi
+Problem, Verge (July 12, 2019), https://perma.cc/QA6F-J54U. Gab is not the only
+right-wing social media network to use Mastodon as its base. Truth Social, Donald
+Trump’s social media site, is also built on top of Mastodon. Michael Kan, Trump’s
+Social Media Site Quietly Admits It’s Based on Mastodon, PCMag (Dec. 1, 2021),
+https://perma.cc/3CJE-S2AA.
+32Robertson, supra note 31.
+33@shadowknight412, Gab (May 27, 2020), https://perma.cc/G82J-73WX.
+Electronic copy available at: https://ssrn.com/abstract=4213674
+Draft: 23-Nov-22 Moderating the Fediverse 13
+algorithms designed to promote this goal tend to emphasize conflict across
+users. By contrast, Fediverse applications can, and often are, engineered with
+“antivirality” in mind.34 For example, Mastodon’s lack of Twitter’s “quote
+tweet” feature was an intentional design choice on Eugene Rochko’s part,
+who judged that it “inevitably adds toxicity to people’s behaviours” and
+encourages “performative” behavior and “rediculing.”35 The same consider-
+ations underpin Mastodon lack of full-text search and eschewal of algorithmic
+amplification in favor of reverse-chronological feeds.36 In addition, Fediverse
+instances, which are generally run by volunteers and without a profit im-
+perative, can afford to focus on smaller communities in which like-minded
+users do not suffer the problem of “context collapse” that frequently leads to
+conflicts on the major social-media platforms.37 Of course, if the Fediverse
+proves popular, for-profit entities may enter the space, thus introducing the
+problematic incentives of the major platforms. But even if this were to occur,
+the ability of users to switch Fediverse instances will limit the extent to which
+the Fediverse’s architecture will reflect the values of the extractive attention
+economy.
+The main objection to the Fediverse is that what some see as its key
+asset—its decentralized model—is for others the main bug. Because there
+is no centralized Fediverse authority, there is no way to fully exclude even
+the most harmful content from the network. And, as noted above, Fediverse
+administrators will generally have fewer resources as compared to giant
+social-media platforms.38 By contrast, if Facebook or Twitter want to fully
+ban a user or some piece of content, they can in principle do so (although in
+practice it can be a challenge given the size of their networks and the ability
+to evade content moderation).
+In considering the limits of decentralized content moderation, it is helpful
+to distinguish between two categories of objectionable conduct. The first cat-
+34Clive Thompson, Twitter Alternative: How Mastodon Is Designed to Be “Antiviral”,
+Medium (Nov. 9, 2022), https://perma.cc/49N4-YWGZ.
+35@Gargron (Eugen Rochko), Mastodon.social (Mar. 10, 2018), https://perma.cc/
+VXE7-XVLC.
+36Thompson, supra note 34.
+37See, e.g., Jenny L. Davis & Nathan Jurgenson, Context Collapse: Theorizing Context
+Collusions and Collisions, 17 Info., Commc’n & Soc’y 476 (2014).
+38See supra notes 9–11 and accompanying text.
+Electronic copy available at: https://ssrn.com/abstract=4213674
+Draft: 23-Nov-22 Moderating the Fediverse 14
+egory consists of content that is broadly recognized as having no legitimate
+expressive value. Examples of such content include are child exploitation
+material, communication that facilitates criminal conduct, and spam. The
+challenges of moderating these types of content are technological and or-
+ganizational, and the main question is whether decentralized social media
+can handle the moderation challenges at scale. Ultimately it’s an empirical
+question and we’ll have to wait until the Fediverse grows to find out the
+answer. But there are reasons for optimism.
+First, the Fediverse itself may be up to the task. Automated scanning,
+while hardly foolproof, could lower moderation costs. For example, many
+of the major platforms use Microsoft’s PhotoDNA system to scan for child
+pornography,39 and the same software could be used by Fediverse instances
+for content that they host. And if effective moderation turns out to require
+more infrastructure, that could lead to a greater consolidation of instances.
+This is what happened with email, which, in part due to the investments
+necessary to counter spam, has become increasingly dominated by Google
+and Microsoft.40 If similar scale is necessary to fight spam and bot accounts,
+this could serve as a centripetal force to counter the Fediverse’s decentralized
+architecture and lead to a Fediverse that is more centralized than it is today
+(although it would still be far more decentralized than architecturally closed
+platforms). There is a tradeoff between a vibrant and diverse communication
+system and the degree of centralized control that would be necessary to
+ensure 100% filtering of content. The question, as yet unknown, is how stark
+that tradeoff is.
+Second, governments could step in to deal with instances that can’t, or
+choose not to, deal with criminal content. Although the Fediverse may live
+in the cloud, its servers, moderators, and users are physically located in
+nations whose governments are more than capable of enforcing local law.41
+A Mastodon instance that hosted child pornography would not only be
+blocked by all mainstream Mastodon instances, but would also be quickly
+39See Hany Farid, Reining in Online Abuses, 19 Tech. & Innovation 596 (2018).
+40See Enze Liu et al., Who’s Got Your Mail?: Characterizing Mail Service Provider Usage,
+in Proceedings of the 2021 ACM Internet Measurement Conference 113
+(2021).
+41See generally Jack Goldsmith & Tim Wu, Who Controls the Internet?: Illu-
+sions of a Borderless World (2006).
+Electronic copy available at: https://ssrn.com/abstract=4213674
+Draft: 23-Nov-22 Moderating the Fediverse 15
+taken offline, and its members prosecuted, by the relevant jurisdictions. Even
+the threat of state action can have large effects. For example, Switter, which by
+the end of its life was the third-largest Mastodon instance, shut down because
+its organizers concluded that, as major jurisdictions like the United States,
+Australia, and the United Kingdom geared up to pass online-safety and anti-
+trafficking bills, Switter’s continued existence was increasingly untenable.42
+When it comes to the second category of content moderation—content
+that is objectionable to one group but is viewed as legitimate, even core,
+speech by others—the Fediverse will host content that current platforms
+prohibit. But whether this is a weakness or a strength depends on one’s
+substantive views about the content at issue. What looks to one group like
+responsible moderation can appear to others as unjustified censorship. And
+when platforms inevitably make high-profile moderation mistake—after all,
+moderation is not an exact science—they undermine their credibility even
+further, especially where determinations of “misinformation” or “disinfor-
+mation” are perceived as tendentious attempts to suppress conflict over
+politics, health, or other important social and culture issues.43
+The benefit of decentralized moderation is that it can satisfy both those
+those that want to speak and those that don’t want to listen. By empowering
+users, through their choice of instance, to avoid content they find objection-
+able, the Fediverse operationalizes the principle that freedom of speech is not
+the same as freedom of reach. In a world where there simply isn’t consensus
+on what content is and is not legitimate, letting people say what they want
+while giving other the means to protect themselves from that speech may be
+the best we can do.
+A different concern with decentralized moderation is that it will lead
+to “filter bubbles” and “echo chambers” by which instance members will
+choose to only interact with like-minded users.44 For Mansoux and Abbing,
+this state of affairs would produce a watered-down, second-best agonism:
+Rather than reaching a state of agonistic pluralism, it could be
+that the Fediverse will create at best a form of bastard agonism
+through pillarization. That is to say, we could witness a situation
+in which instances would form large agonistic-without-agonism
+aggregations only among both ideologically and technically com-
+patible communities and software, with only a minority of them
+able and willing to bridge with radically opposed systems.45
+This concern, though understandable, has several responses. First, filter
+bubbles are not a Fediverse-only phenomena; closed platforms can design
+their systems so as to keep dissimilar users from interacting with each other.
+Second, it is important to not overstate the effect of filter bubbles; even the
+most partisan users frequently consume and even seek out information that
+challenges their beliefs.46 While Fediverse applications like Mastodon may
+make it easier for users to communicate only with like-minded peers, users
+can still go outside their instances to access whatever information they want.
+And third, even if filter bubbles exist, it is unclear whether they are a net neg-
+ative, at least from the perspective of polarization and misinformation. The
+“backfire effect” (also known as belief perseverance) is a well-established psy-
+chological phenomenon whereby individuals who are exposed to evidence
+that challenge their views end up believing in those views more rather than
+less.47 In this view, a more narrowly drawn epistemic environment, while
+hardly a model of ideal democratic public reason, may actually be better than
+a social media free-for-all.
+III. Encouraging the Fediverse
+The Fediverse is still a very small part of the broader social-media ecosystem.
+Mastodon’s several million users pale in comparison with Facebook’s billion
+or Twitter’s hundreds of millions of users. Whether the Fediverse ever grows
+large enough to challenge the current dominance of closed platforms is very
+much an open question, one that will ultimately depend on whether the
+Fediverse provides a product that ordinary users find superior to what is
+currently available on the dominant platforms. This is not preordained and
+will require millions of people to overcome the steeper learning curves of
+Fediverse applications and commit to platforms that are intentionally less
+viral than the engagement-at-all-costs alternatives. But if there is widespread
+demand for such services, and if the existing Mastodon community can
+integrate an influx of new users,48 then the current dominance of the incum-
+bent platforms may prove illusory. After all, they are themselves subject to
+shakeups, as is demonstrated by the meteoric rise of apps like TikTok.
+At the same time, public policy interventions could encourage the growth
+of the Fediverse. Here I briefly consider four such interventions, going from
+most to least direct government involvement.
+First, governments could support the Fediverse by themselves participat-
+ing in it as users, or better yet, instances. This would both directly contribute
+to the Fediverse’s growth but, more importantly, would help legitimate it as
+the preferred social media architecture for democratic societies. For example,
+shortly after Elon Musk announced plans to purchase Twitter, the European
+Commission, the executive branch of the European Union, launched EU
+Voice, a Mastodon instance that “provides EU institutions, bodies and agen-
+cies with privacy-friendly microblogging accounts that they typically use for
+the purposes of press and public relations activities.”49 Other governments
+and international organizations could follow suit.
+Second, governments could mandate that large social media platforms
+interoperate with the Fediverse. Under such a regime, Facebook would, for
+example, be allowed to choose what users or content appear on its servers,
+but it would have to allow other Fediverse instances to communicate with it.
+48See Alan Rozenshtein, Mastodon’s Content-Moderation Growing Pains, Volokh Con-
+spiracy (Nov. 21, 2022), https://perma.cc/5MPT-3WYK.
+49EU Voice, https://perma.cc/2NTM-9N6E (last visited June 15, 2022).
+Electronic copy available at: https://ssrn.com/abstract=4213674
+Draft: 23-Nov-22 Moderating the Fediverse 18
+This would allow users who wanted access to content that Facebook removes
+to still access it and still interact with the broader Facebook community. Such
+regulation would have to specify to what extent Facebook could block other
+instances entirely, since otherwise Facebook could effectively defederate. But
+even a limited interoperability mandate would enable a balance between
+what is currently the two extreme options: totally unfettered control by
+closed platforms or common-carrier type regulations that make any sort of
+moderation impossible.50
+Such regulation is already being pursued in Europe, where the Digital
+Services Act would require large platforms to interoperate, a requirement
+that could easily be modified to include the Fediverse.51 In the United States,
+interoperability legislation, which has already been introduced in Congress,52
+would be a welcome alternative to recent overbroad state laws from Texas,
+Florida, and other Republican-governed states that purport to limit the ability
+of major social media platforms to moderate content. These laws, in addition
+to being poorly thought out and overtly political, may also violate the First
+Amendment, at least in their more extreme versions.53
+Third, antitrust regulators like the Department of Justice and the Federal
+Trade Commission could use an incumbent platform’s willingness to inter-
+operate as a consideration in antitrust cases.54 Interoperability could then be
+50To be sure, interoperability mandates are not without their own risks, especially
+to user privacy. See, e.g., Thomas E. Kadri, Digital Gatekeepers, 99 Tex. L. Rev. 951,
+999 (2021); Jane Bambauer, Reinventing Cambridge Analytica One Good Intention at a
+Time, Lawfare (June 8, 2022), https://perma.cc/7V7W-GML6.
+51At the same time, other requirements of the Digital Services Act, especially around
+mandatory content moderation, might hinder the Fediverse’s development. See
+Konstantinos Komaitis & Louis-Victor de Franssu, Can Mastodon Survive Eu-
+rope’s Digital Services Act?, Tech Policy Press (Nov. 16, 2022), https://perma.cc/
+W8RC-2XVL.
+52See, e.g., Press Release, Sen. Mark R. Warner, Lawmakers Reintroduce Bipartisan
+Legislation to Encourage Competition in Social Media (May 25, 2022), https://
+perma.cc/SC2Z-3XQL.
+53See, e.g., Alan Z. Rozenshtein, First Amendment Absolutism and the Florida Social
+Media Law, Lawfare (June 1, 2022), https://perma.cc/WXT9-4HAL; see generally
+Alan Z. Rozenshtein, Silicon Valley’s Speech: Technology Giants and the Deregulatory
+First Amendment, 1 J. Free Speech L. 337 (2021).
+54See generally Chinmayi Sharma, Concentrated Digital Markets, Restrictive APIs, and
+Electronic copy available at: https://ssrn.com/abstract=4213674
+Draft: 23-Nov-22 Moderating the Fediverse 19
+an alternative to calls to “break up” social media giants, a tactic that is both
+legally risky and, as a policy matter, controversial.55
+Finally, policymakers should consider how the background legal regime
+can be tweaked to improve the incentives for the Fediverse. In the United
+States, the most important factor is Section 230 of the Communications
+Decency Act of 1996, which shields platforms from liability as publishers of
+content created by users.56 Although Section 230 has come under increasing
+controversy, especially as it applies to giant platforms, it’s hard to imagine how
+the Fediverse could function without it. The open nature of the Fediverse—
+with users being able to travel between and communicate across instances—
+limits the scope of monetization, since users can choose instances that limit
+advertisements and algorithmic ranking. But this also means that Fediverse
+instances will lack the resources necessary to perform the sort of aggressive
+content moderation that would be necessary were they to be held liable
+for their users’ content. The rationale for Section 230 immunity when it
+was enacted in the mid-90s—to help support a nascent Internet—no longer
+applies to the technology giants. But it does apply to the current generation
+of Internet innovators: the federated social media platforms.
+the Fight for Internet Interoperability

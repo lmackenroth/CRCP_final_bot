@@ -1,0 +1,560 @@
+﻿Almost everything people do online is tracked by a variety of entities, whether they are
+shopping, using a search engine, reading the news, getting health information, or even
+watching pornography. One regulatory model for protecting people’s privacy from all this
+tracking, and currently the dominant legal framework in the United States, is known as
+‘notice-and-consent’. Under notice-and-consent, people are mostly free to collect and
+use data as they wish, but they are required to notify users of their data policies, typically
+by including a link to a privacy policy. Users are then taken to consent to these, either
+expressly (by clicking ‘I agree’ or some cognate) or tacitly (by merely using the services).
+According to advocates, notice-and-consent provides all the privacy protections people
+need; notice empowers users to decide for themselves whether data practices are reason-
+able, and their consent legitimates these practices. Critics have objected on several
+grounds. Daniel Susser offers a nice summary:
+Philosophers and legal theorists argue that the cost of opting out of services is
+often too high to represent a meaningful choice for individuals to make. In cases
+where they might reasonably opt out individuals are frequently ill-equipped to
+fully understand the decision they face. And even when they do understand it,
+what is at issue in the decision is often a social rather than individual interest.
+In such cases individuals should not be deciding about it in the first place. 1
+The upshot of these criticisms, Susser proposes, is that ‘the consent offered when individ-
+uals sign privacy policies ... is not meaningful’ and ‘cannot legitimate the collection and
+use of user information’. 2 Susser thus joins a growing chorus of scholars who propose that
+consent to data practices is ‘meaningless’. 3 Importantly, critics typically claim that these
+problems arise from structural and technical features of data practices that are either
+© 2022 The Author. Journal of Applied Philosophy published by John Wiley & Sons Ltd on behalf of Society for Applied Philosophy.
+This is an open access article under the terms of the Creative Commons Attribution-NonCommercial-NoDerivs License, which
+permits use and distribution in any medium, provided the original work is properly cited, the use is non-commercial and no
+modifications or adaptations are made.
+Journal of Applied Philosophy
+doi: 10.1111/japp.12592
+impossible or extremely unlikely to change, and that as a result, ‘Notice-and-consent
+appears to be a failed regulatory model’. 4
+Against all this, I argue that advocates and critics of notice-and-consent are both mis-
+taken about the significance of consent to data practices. Advocates are wrong to think
+that consent guarantees legitimacy, for reasons critics have rightly emphasized. But critics
+are wrong to think that consent ‘is not meaningful’ and ‘cannot legitimate’ data practices;
+while consent does not guarantee legitimacy, it may legitimate all the same. The basic rea-
+son is that if notice were improved, consent would neither be so impoverished as to be
+meaningless nor so impeccable as to guarantee legitimacy; it could legitimate data prac-
+tices that are independently reasonable but not those that are exploitative.
+The major upshot is that people often can provide meaningful consent to data
+practices – even complicated data practices that are costly to avoid. This does not mean
+that notice-and-consent is a good regulatory model; even if people can provide meaning-
+ful consent to data practices, it may often be preferable to spare them the burdens of doing
+so (and/or to strengthen their bargaining positions by denying them the ability to do so). 5
+But it does mean that invasive data practices (i.e. data practices which would conflict with
+an individual’s rights) can, in the right circumstances, be legitimated by consent. This
+in turn means that where there are (on balance) genuinely good reasons to deploy such
+data practices, this can be done in good conscience, as long as consent is properly secured
+and care is taken to not exploit data subjects.
+1. Framing the Debate
+The function of consent is to voluntarily alter moral and/or legal (henceforth: ‘normative’)
+entitlements. For our purposes, this chiefly involves waiving some of our rights (thus
+releasing certain others from any correlative duties) and/or undertaking obligations (either
+to the performance or nonperformance of certain actions). Our ability to alter normative
+entitlements is, of course, not unlimited; I typically cannot waive your rights, for example.
+Where somebody’s consent can alter some normative entitlement (when expressed
+through suitable means, which can vary between contexts), I will say that they have a nor-
+mative power. One’s normative powers thus demarcate a space within which one can con-
+trol rights and duties, sometimes one’s own, sometimes other people’s. 6 Call consent that
+does (morally) or should (legally) alter entitlements in the ways it purports to ‘valid’.
+In the present context, the relevant function of consent is rendering permissible certain
+data practices which would otherwise be impermissible. Structurally, this is best under-
+stood as involving two components. First, data practitioners (people who engage in data
+practices) initially have duties, owed to technology users, to refrain from certain data prac-
+tices (equivalently: users have rights, held against data practitioners, to be free from cer-
+tain data practices). 7 Second, users have powers to waive these duties, thus permitting
+(ceteris paribus) data practitioners to do something they would otherwise not be permitted
+to do. It is only when (and because) there is this distribution of duties and powers that user
+consent to data practices is significant; where there are no initial duties to refrain from data
+practices, user consent is unnecessary, and where users lack the powers to waive such
+duties, user consent is irrelevant.
+It will be helpful to have a label in what follows, so I will call any duty prohibiting a data
+practice a ‘data restriction’. The question of the proper role for user consent to data
+© 2022 The Author. Journal of Applied Philosophy published by John Wiley & Sons Ltd on behalf of Society for Applied Philosophy.
+2 Kevin Mills
+practices is fundamentally about whether and when users should be able to waive data
+restrictions (versus when, perhaps for the protection of users themselves, certain data
+restrictions should be unwaivable). This breaks down into two sub-questions:
+POWERS: Which data restrictions should users have the legal powers to waive?
+CONDITIONS: When should users be recognized as exercising these powers?
+It is worth emphasizing that CONDITIONS is distinct from POWERS; there is
+sometimes a temptation to speak only of ‘consent’ in the abstract, but we can, should,
+and do adopt different standards for the conditions under which different powers are
+exercised (for example, legally binding contracts have various formal requirements, and
+we have uncommonly strict requirements for consent to medical research).
+Much of the theoretical work on consent to data practices has been done in the context
+of criticizing notice-and-consent, which offers particularly promiscuous answers to these
+questions; notice-and-consent grants users nearly unlimited powers to legitimate data
+practices and places almost no restrictions on the conditions under which these powers
+can be exercised. Two standard criticisms have emerged. The first claims that user con-
+sent is typically ‘meaningless’, as users are uninformed (they cannot reasonably be
+expected to understand what they are consenting to) and their consent is involuntary (they
+typically have ‘no choice’ but to consent even if they do). Structurally, this challenges
+notice-and-consent’s answer to CONDITIONS. That said, critics typically argue that
+these problems cannot realistically be addressed and use this to challenge notice-and-con-
+sent’s answer to POWERS, arguing for a variety of data restrictions users are not empow-
+ered to waive.
+The technical details of these arguments are typically made much more explicit than the
+normative ones. To establish that user consent is involuntary, critics note that invasive
+data practices are so pervasively tied to important technologies (e.g. the internet) that
+avoiding them essentially requires forgoing these technologies altogether, something
+thought so unrealistic as to invalidate any consent offered to bundled data practices. 8
+To establish that users are uninformed, critics cite a variety of features that allegedly make
+‘informed consent’ to data practices difficult or impossible, including: (i) the length and
+complexity of privacy agreements, both as they actually are, and as they allegedly must
+be in order to adequately inform users; 9 (ii) the sheer volume of privacy agreements users
+encounter; 10 (iii) the ability of data practitioners to unilaterally update privacy agreements
+at any time, thus requiring constant monitoring from users; 11 (iv) the fact that the infer-
+ences that can be drawn from data, and thus the costs of giving up this data, can be highly
+counterintuitive; 12 (v) the frequency with which data flows to third parties (e.g. is sold on
+data markets), which often makes it all but impossible to assess who will ultimately gain
+access to one’s data and what they will do with it; 13 and (vi) the aggregative nature of data
+costs (new data can combine with old data in complicated ways to facilitate even more
+counterintuitive inferences). 14 All told, or so the argument goes, assessing the costs of
+data practices is so difficult that most users cannot offer ‘meaningful’ consent to them.
+We can summarize the first criticism as arguing that user consent is defective. The sec-
+ond criticism argues that user consent is, in many cases, irrelevant. In granting users
+nearly unlimited powers to legitimate data practices, notice-and-consent presupposes that
+data restrictions are owed almost exclusively to individual users, but critics reject this. The
+standard argument is that many data restrictions are justified by broad social
+© 2022 The Author. Journal of Applied Philosophy published by John Wiley & Sons Ltd on behalf of Society for Applied Philosophy.
+Consent and the Right to Privacy 3
+considerations (for example: because data is being used to manipulate people in ways that
+undermine democracy, and this must be stopped). That said, we need not appeal to broad
+social values to make this point; if there is any justification for data restrictions other than
+the protection of the individual user whose data is at issue (including e.g. the protection of
+groups smaller than society generally, such as marginalized groups who may be discrimi-
+nated against), notice-and-consent’s answer to POWERS fails, since users should not
+have powers to waive duties that are not owed to them.
+While these criticisms are surely on to something, I believe they are less forceful than is
+standardly believed; they rightly highlight various respects in which notice-and-consent
+may leave people vulnerable to unscrupulous data practitioners, but they are unreasonably
+pessimistic about what consent can accomplish when data practices are scrupulously
+deployed in good faith (including, perhaps, when doing so is enforced by market condi-
+tions rather than legislation). Let us consider each criticism in more detail.
+2. Information
+Let us start with the first criticism, which argues that consent under notice-and-consent is
+typically invalid since: (i) users cannot reasonably be expected to understand what they are
+consenting to; and (ii) they typically have ‘no choice’ but to consent even if they do. As
+Alan Wertheimer’s work in particular has demonstrated, these arguments are consider-
+ably more complicated than is sometimes appreciated. 15 I will start with information.
+Conventional wisdom has it that valid consent either should or must be ‘informed’. It is
+not always clear exactly what this means, but on a fairly standard analysis, it requires
+knowing all the following (to some suitable level of depth):16
+(1) what is being consented to;
+(2) the likely costs and benefits of consenting;
+(3) the details of any relevant alternative courses of action.
+The standard argument for this sort of view appeals to autonomy (or to a close legal cor-
+relate, ‘the right to self-determination’). 17 For example, Faden and Beauchamp argue
+that autonomy ought to serve as ‘the benchmark’ by which consent is evaluated and that
+‘An action cannot be autonomous if the actor fails to have an understanding of his or
+her action’. 18 Similarly, Barocas and Nissenbaum propose that ‘There is little value in a
+protocol for informed consent that does not meaningfully model choice and, in turn,
+autonomy’, something that requires people to ‘understand how their assent plays out in
+terms of specific commitments, beliefs, needs, goals, and desires’. 19 The core idea seems
+to involve three claims: first, that the purpose of soliciting consent (the only purpose?) is to
+facilitate autonomous decision-making; second, that autonomous decisions must be
+appropriately responsive to an agent’s values; and third, that this requires the agent to
+be informed in roughly the previous sense.
+There is surely much to recommend this proposal, but it belies a great deal of complex-
+ity. To start, we should distinguish two possible claims: first, that valid consent must be
+informed, and anything insufficiently informed is thus, by that fact alone, not valid con-
+sent; second, that valid consent should ideally be informed, but in ways that might be out-
+weighed by other considerations. Let us consider each option in turn.
+© 2022 The Author. Journal of Applied Philosophy published by John Wiley & Sons Ltd on behalf of Society for Applied Philosophy.
+4 Kevin Mills
+To help explore the proposal that valid consent must be informed, consider the follow-
+ing example:
+CULPABLE IGNORANCE: Culpable wants to rent an apartment and is given a
+lease. She could easily read and understand the lease, but chooses not to, because
+she prefers to watch television. Culpable signs and returns the lease the next day,
+falsely claiming that she has read it and agrees to the terms. Landlord stops show-
+ing the apartment to other prospective tenants, believing a tenancy agreement
+has been formed.
+Culpable is significantly uninformed about the lease she has signed but has nobody to
+blame but herself. Assuming the terms are reasonable, she should be held to them, even
+if she did not know about them, and even if she would not have signed if she had. For
+example, imagine the lease prohibits pets, whereas Culpable was planning to purchase a
+cat. It is unfortunate that she is now bound by this prohibition, but that is her burden to
+bear; to treat her consent as invalid would be unfair to Landlord. 20
+To prevent misunderstandings, the lesson of CULPABLE IGNORANCE is not that
+users should be held responsible for failing to understand privacy agreements (a naïve pro-
+posal at best, a malicious one at worst). 21 The lesson is that if there is some sense in which
+valid consent must be informed, this involves informational requirements far lower than
+those standardly associated with ‘informed consent’. Culpable does not know exactly
+which entitlements her consent is altering. If you add my addendum about pets, she also
+does not know about an important cost of consenting. And while this was not part of the
+example, she could easily know very little about the available alternatives, e.g. because this
+was the only apartment she looked into. None of this invalidates her consent.
+In this example, the most important reason to treat Culpable’s consent as valid is that
+this is a bilateral consent transaction, and fairness to the other party requires doing
+so. It is worth emphasizing that this is not the only sort of case. Consider another example,
+this time involving marriage (which transforms normative entitlements in various impor-
+tant ways, e.g. pertaining to property, decision-making powers in the event of incapacita-
+tion, the fiduciary obligations that come with these, etc.) 22 :
+OPTIMISTIC MARRIAGE: Optimist and Idealist are in love and decide to get
+married. They know that many marriages end in divorce; however, they are all
+but certain this will not happen to them, as their love is true love.
+While some people in this (probably not uncommon) situation might be justified in their
+confidence, many presumably would not be. Assume Optimist and Idealist are not –
+assume their confidence is not premised on some deep insight into their relationship
+but is simply a by-product of their intoxicating love. This makes their decision to get mar-
+ried not just uninformed, but significantly misinformed, as they have false beliefs about
+the probabilities of various costs and benefits the decision implicates. Even still, I propose,
+their consent is and should be treated as valid; we should neither prevent them from mar-
+rying, nor, if their marriage fails, retroactively declare their marriage null and void on the
+grounds that it resulted from faulty consent.
+To be clear, I do not take any of this to refute the proposal that valid consent must be
+informed in some important but more minimal sense. Grounds for doubt
+notwithstanding, 23 I find this extremely plausible, for reasons Tom Dougherty nicely
+articulates: consent must typically be intentional, and one must have at least some
+© 2022 The Author. Journal of Applied Philosophy published by John Wiley & Sons Ltd on behalf of Society for Applied Philosophy.
+Consent and the Right to Privacy 5
+understanding of what one is doing for an action to be intentional. 24 What is important for
+my purposes is that if this is true at all, these requirements fall far short of the standard
+requirements for ‘informed consent’; they may include various details about what is con-
+sented to, but will not, at least in general, include a deep understanding of costs and ben-
+efits or available alternatives.
+I turn now to the second proposal: that valid consent should ideally be informed, but
+only as one consideration amongst others. Perhaps this is correct – either because of some
+deep truth about autonomy and consent, or simply because being informed makes people
+more likely to exercise their powers in ways that promote their welfare. The important
+thing to recognize is that there are considerations that pull in the opposite direction. We
+are limited beings living in complex environments, and there are many reasons why we
+may not wish or be able to thoroughly inform ourselves about various consent decisions.
+When such circumstances arise, strict information requirements can deny us the power of
+choice entirely, or at least make this power very difficult to exercise. While this is surely
+sometimes appropriate, it often has serious costs; denying people the power of choice
+either means denying them certain opportunities, which is problematic when these oppor-
+tunities are valuable, or forcing these opportunities upon people, which is problematic
+when their desirability or legitimacy depends on people’s consent. Given these costs, it
+is sometimes better to grant people the power of choice even where a decision involves
+serious information deficits.
+Consider marriage again. Marriage is a serious legal arrangement with serious legal
+repercussions, yet decisions to get married often involve significant information deficits;
+the costs and benefits are uncertain, the probabilities are difficult to assess, the alternatives
+are massively unknown and poorly explored, and the decision implicates powerful emo-
+tions that are known to distort our judgment. Why do we let people enter into such a seri-
+ous legal arrangement with such impoverished information (and not just let them, but
+even incentivize doing so with various legal benefits)? I propose that the best justification
+at least includes the following: because we think marriage is an important and valuable
+institution, for the married couple and/or for society generally. If it were not (or, I sup-
+pose, if you think it is not), it might well be preferable to deny people the power to marry
+on grounds of protecting them from bad decisions resulting from weak information.
+For another example, consider medical research, which inevitably involves significant
+information deficits and sometimes subjects participants to serious risks. It is hard to jus-
+tify allowing participants to consent to this except by appealing to the value of medical
+research, and indeed, our regulatory structures presuppose this (institutional review
+boards are tasked with assessing whether a study’s potential benefits justify its risks to par-
+ticipants and will typically prohibit the recruitment of human subjects for risky studies that
+lack ‘social value and scientific validity’). 25 Importantly, the value facilitated by medical
+research is not, or is not only, to the benefit of participants; one of the crucial justifications
+for allowing people to consent to risky studies despite serious information deficits is that
+this facilitates something of great importance to society generally. And, or so I would urge,
+this justification succeeds. As these information deficits cannot be eliminated (although
+we do the best we can), and as it would (I assume) typically be illegitimate to force people
+to participate in medical research, the value of medical research justifies lower information
+requirements for consent than might apply in other contexts.
+My proposal, then (Wertheimer’s proposal, really), is that there are no context-
+insensitive information requirements for valid consent, except perhaps of a quite minimal
+© 2022 The Author. Journal of Applied Philosophy published by John Wiley & Sons Ltd on behalf of Society for Applied Philosophy.
+6 Kevin Mills
+sort; the threshold of information beneath which people should be denied some power, or
+prevented from exercising it, depends on factors that are specific to the power in question.
+One factor is the comparative importance of protecting people from bad decisions versus
+facilitating good ones, something that depends on the stakes of the decision. Another per-
+tains to the viability of bypassing consent altogether, i.e. whether it is possible, legitimate,
+and desirable to deny people some power and promote the values consent might otherwise
+facilitate through other means. This is impossible for values that constitutively depend on
+consent. It is illegitimate where it violates people’s (moral) rights, either to have certain
+legal powers or to be free from certain non-consensual interactions. And it is undesirable
+where the values at stake would be more effectively promoted consensually, whether
+because people prefer to make decisions themselves, because their decisions track their
+preferences better than alternatives, or for some other reason. 26
+Consider now consent to data practices. I grant that there are various technical and
+structural features of data practices that significantly limit people’s abilities to assess the
+costs of consenting to them. If we add the plausible assumption that these costs can be sig-
+nificant (if only because people value their privacy, although perhaps also in more tangible
+ways), this makes a strong case for declaring such consent invalid on grounds of protec-
+tion. But this is, as argued, only one part of the story; we must also consider the values con-
+sent to data practices potentially facilitates and the viability of bypassing consent
+altogether. I will consider these in reverse order.
+Note first that users can be informed about data practices in various important ways
+(or at least presumably could be, if data practitioners honestly and accessibly summarized
+them). Most notably, they can often understand what data is being collected, certain
+salient features about how it is used, and who initially collects it (or embeds services that
+allow others to collect it). Each of these is extremely significant – they are some of the most
+significant features of many data practices. For example, many in-home assistants exten-
+sively record audio after an activation command is spoken (or is mistakenly flagged as spo-
+ken), and workers are sometimes employed to listen to this audio to improve voice
+recognition algorithms. 27 Many people find this extremely invasive, and not because of
+complex technical details they cannot be expected to understand; the recording itself is
+invasive, as is allowing people to listen to it. That said, there are good reasons for this prac-
+tice (improving voice recognition algorithms is important), and many people seem
+untroubled by it, or at least willing to tolerate it in exchange for the benefits offered by
+the technology. Given this, I see no reason (at least based on concerns about information)
+why consent cannot legitimate these specific practices, following suitable disclosures.
+Moreover, I would urge that consent both should and must be solicited here; should,
+because it will help track people’s preferences about whether they are subjected to these
+practices, and must, because it simply strikes me as illegitimate to extensively record audio
+inside of people’s homes without their consent (I cannot develop a proper argument for
+this claim here, but I hope your good moral judgment suffices; this is clearly a practice that
+otherwise conflicts with the right to privacy, and that must thus be consented to if it is to be
+legitimate).
+This is a fairly extreme case, but it is not a unique case. Do I want to use a search engine
+that indefinitely retains my search queries? Or map software that indefinitely retains my
+location data? Or a website with analytics software that produces (or can produce) recon-
+structed videos of my web browsing? Or cloud storage that searches through the contents
+of my photographs? Or an email provider that builds a profile on me by searching through
+© 2022 The Author. Journal of Applied Philosophy published by John Wiley & Sons Ltd on behalf of Society for Applied Philosophy.
+Consent and the Right to Privacy 7
+my emails? Or a social media platform, which extensively collects and uses data, run by a
+company with a dubious ethical history? I could go on, but I hope the point is already suf-
+ficiently clear: people can track many salient features, both of data practices and of those
+who engage in them, and often have strong and reasonable preferences because of this. At
+least if we restrict our attention to information, their consent to such practices is not at all
+‘meaningless’; people know enough, or can know enough, to bring meaningful and
+important preferences to bear on whether to use such technologies. Moreover, I would
+urge again that many of these practices must be consented to if they are to be legitimate.
+I thus propose that it would be undesirable, and often illegitimate, to permit these data
+practices without user consent. Should they be permitted at all? There is a strong case to
+be made that many of them should; data is extremely valuable, and users derive both tech-
+nological and economic benefits from data practices (both as individuals and as members
+of our society). Perhaps most obviously, data is one of the twin economic pillars of
+the internet that make so much content available for ‘free’ (the other is advertising,
+although it is somewhat misleading to separate these). To offer an example I find particu-
+larly striking, one can find instructional videos online, many of them quite high quality,
+covering almost any topic one might reasonably want instruction on (e.g. yoga, cooking,
+fixing your car, assembling your own computer, or even coaching Little League baseball).
+This knowledge is made available to everybody with an internet connection and is signif-
+icantly monetized – both in distribution and often in production – by data practices. One
+argument in favor of permitting these data practices is that there is value in being able to
+pay for content with data instead of money, but it goes deeper than this. For one thing,
+it is at least unclear whether content would flourish to the extent it currently does under
+alternative economic models. For another, there is an important social-justice function
+served here, as the egalitarian distribution of specialized knowledge is no small matter.
+And this is to say nothing of the respects in which our technology itself is improved by data
+practices.
+I am going to take a step back, as I cannot properly explore the considerations that count
+for and against various data practices in this article (to say nothing of the viability of alter-
+native economic models). My fundamental proposal, however, is that this is the task that
+faces us. People have rights, most notably the right to privacy, and data practices some-
+times conflict with these rights. Where they so conflict, these practices must be consented
+to if they are to be legitimate (the rights-holders must waive the rights in question). If peo-
+ple could not, in principle, offer valid consent here, they would either have to be denied
+certain rights, various data practices would inevitably be illegitimate, or both. But at least
+from the perspective of information, this need not be the case: first, because users can be
+informed about some very important features of data practices; second, because the
+requirements for valid consent depend on the comparative importance of protecting peo-
+ple from bad decisions versus facilitating good ones (whether good for the consenter, soci-
+ety generally, or both); and third, because invasive data practices sometimes have
+considerable value. Where there are good reasons to deploy certain data practices (eco-
+nomic, technological, or otherwise), where these reasons trump or outweigh countervail-
+ing reasons, and where sincere efforts are made to inform data subjects in whatever
+relevant ways are feasible, people can thus offer valid consent to data practices despite sig-
+nificant information deficits.
+Of course, we must be careful here; insofar as people have weak information, they are
+poorly positioned to safeguard their interests, and vulnerable to exploitation. If we are
+© 2022 The Author. Journal of Applied Philosophy published by John Wiley & Sons Ltd on behalf of Society for Applied Philosophy.
+8 Kevin Mills
+to accept their consent, it is morally imperative that their interests are somehow protected
+elsewhere – either by scrupulous data practitioners, a well-ordered market, regulators, or
+some combination of the above. But as long as they are properly protected, consent can
+legitimize practices that are otherwise illegitimate, and such practices can thus be
+deployed in good conscience (at least from the perspective of information). Whether
+and when data practices satisfy these requirements depends on difficult questions about
+their empirical effects, the right to privacy, distributive justice, and other matters. As this
+article is primarily on consent, I must set such issues aside.
+3. ‘No Choice’ Scenarios
+Let us now explore the claim that consent under notice-and-consent is often invalid
+because users have ‘no choice’ but to provide it. I will note in passing that the meaning
+of this expression is not transparent, and what appears to be the same basic idea is often
+expressed in different ways, e.g. by saying that somebody ‘lacks reasonable alternatives’,
+‘lacks acceptable alternatives’, or ‘lacks meaningful choices’. That said, rather than
+attempt to clarify this idea, I will simply assume we have an adequate intuitive grasp on
+it, since I will argue that it is the wrong way to approach these matters anyway.
+Scholars working on consent have long recognized that lacking acceptable alternatives,
+whatever exactly this means, does not in general invalidate somebody’s consent. 28 Con-
+sider a simple example:
+SURGERY: Patient needs surgery and will otherwise die. The surgery is safe,
+effective, and relatively pain free. Patient consents to the surgery and Surgeon
+performs it. 29
+If anybody lacks acceptable alternatives, Patient surely does – his only alternative is death.
+But this does not invalidate his consent, as his consent renders (or could render) the sur-
+gery permissible. What follows if he does not consent is complicated. Given my stipulation
+that the surgery is ‘safe, effective, and relatively pain free’, his refusal would arguably be
+evidence of incompetence or misinformation, and would leave Surgeon with some inves-
+tigative work to do. 30 But these details do not matter for our purposes; after disclosure, his
+affirmative consent renders the surgery permissible (with no further investigations
+needed), and a lack of acceptable alternatives thus does not invalidate his consent.
+There are two interesting structural features of SURGERY: first, consenting presum-
+ably is an acceptable alternative; second, the consent receiver is doing all they can to help
+the consent provider. It is worth considering an example that lacks these features.
+Consider:
+RING: Seller needs money to pay for an urgent medical treatment. She believes
+her only realistic way to get this money is to sell her late husband’s wedding ring,
+which is quite valuable, but also of deep emotional significance. Seller locates
+Buyer, receives fair market value for the ring, and is thus able to afford the
+treatment.
+Both options available to Seller are presumably unacceptable. Buyer also does less to help
+than is possible (Buyer could give Seller the money outright). Does this render Seller’s
+consent to sell her ring invalid? If it does, then Buyer violates Seller’s rights, as he takes
+© 2022 The Author. Journal of Applied Philosophy published by John Wiley & Sons Ltd on behalf of Society for Applied Philosophy.
+Consent and the Right to Privacy 9
+Seller’s property without her valid consent. But Buyer surely does not violate Seller’s
+rights here; he might be subject to other forms of criticism, but not this one. It follows that
+Seller’s consent is valid, even though she lacks acceptable alternatives and even though
+Buyer could but does not offer her one.
+I believe people are sometimes misled about the significance of lacking acceptable alter-
+natives because situations in which somebody lacks acceptable alternatives often (but not
+always) have a separate feature which really does invalidate consent. Consider:
+ROBBERY: Robber points a gun at Victim and says, ‘your money or your life’.
+Victim hands over his money.
+Victim lacks acceptable alternatives, and his consent is surely invalid. But notice another
+feature of this example: Robber violates Victim’s rights by demanding his compliance
+under the threat of murder, thus unjustly limiting the options Victim has available to
+him (Victim should have a third option where he keeps his money and lives). Following
+Wertheimer’s analysis, I believe this rights violation is what undermines Victim’s consent,
+not a lack of acceptable alternatives. 31 Consider another example:
+COFFEE: Bully grabs Innocent’s coffee and says, ‘give me a dollar or I’m keep-
+ing this’. Innocent prefers not to lose her coffee and hands over a dollar.
+Innocent’s consent is clearly invalid; this is not a legitimate transfer of property and her
+dollar should be returned to her. That said, if we set aside the rights violation, Innocent’s
+options are surely both acceptable; whether she loses her coffee or a dollar, she is at worst
+mildly inconvenienced. The common feature that invalidates consent in ROBBERY and
+COFFEE is thus not the mere absence of acceptable alternatives, but the presence of a spe-
+cific sort of rights violation: Victim and Innocent each have a right to a third alternative
+they are unjustly denied, and indeed, they are unjustly denied by the very party soliciting
+their consent. This hypothesis also explains why Seller’s consent is valid in RING; it would
+be very nice for Buyer to simply give Seller the money, but Seller has no right that Buyer
+do this.
+This is, at any rate, how I analyze these cases. That said, sorting out exactly when and
+why various features of scenarios in which somebody lacks acceptable alternatives invali-
+date their consent is a task I cannot properly undertake here; this is a lengthy dialectic that
+invites iterative moves and countermoves. Fortunately, we do not need a perfectly general
+solution to this (if there even is one to be found). This much is beyond dispute: lacking
+acceptable alternatives does not in general invalidate somebody’s consent. So, what is it
+about the specific lack of acceptable alternatives to data practices that is thought so
+problematic?
+I believe there is a straightforward answer here. Assume for sake of argument that for-
+going certain technologies really is an ‘unacceptable alternative’, in whatever precise sense
+you like. Assume also, as is currently true, that people must consent to some agreement to
+access these technologies. Consent to this agreement is not necessarily invalid. For exam-
+ple, if the agreement simply required users to pay some modest and reasonable fee to the
+service provider, most users would surely have no grounds for complaint. The mere fact
+that users lack acceptable alternatives is thus not itself a problem here. But of course, as
+matters stand, this is not the agreement; users are instead required to accept invasive data
+practices. Why is this a problem when paying a modest and reasonable fee would not be? I
+propose that the most plausible answer is that this specific arrangement violates people’s
+© 2022 The Author. Journal of Applied Philosophy published by John Wiley & Sons Ltd on behalf of Society for Applied Philosophy.
+10 Kevin Mills
+rights, not because they lack acceptable alternatives in the abstract, but because they lack a
+specific alternative that, by right, should be available to them: one in which they both have
+access to important technologies and maintain reasonable privacy. Call this ‘the access
+right’. I believe the best version of the ‘no acceptable alternatives’ argument charges (cer-
+tain) data practices with violating the access right.
+Do members of our society have such a right? I find it quite plausible that they do, as
+long as we are sufficiently flexible about what counts as ‘reasonable privacy’. But therein
+lies the rub. It has long been recognized in the literature on the right to privacy that people
+do not have a right to absolute privacy; they have a right to reasonable privacy, and what
+counts as reasonable privacy is determined by balancing people’s privacy interests against
+those various interests of others with which they conflict. 32 But this means we have essen-
+tially reached the same point here that we did when considering information. The scope
+and limits of the access right, assuming it is a genuine right at all, depend on the indepen-
+dent justifications that can be offered for and against various data practices. Insofar as
+these practices are independently justified, they fall outside the scope of the access right,
+and the access right thus cannot be cited as invalidating user consent to them.
+I should mention briefly that there is another way of reading the ‘no choice’ argument
+according to which the claim is not that consent is invalidated, but simply that consent
+is rendered pointless. For reasons discussed in the last section, I believe this argument is
+also unsuccessful; insofar as users can bring meaningful preferences to bear on consent
+decisions about data practices, and insofar as they have options that variously (even if
+imperfectly) conform to these preferences, their consent is not pointless. Note also that
+these conditions need not be satisfied in every case; a policy for soliciting user consent is
+(minimally) not pointless if users can meaningfully exercise their discretion in some cases,
+even if they cannot do so for all of them.
+4. Externalities
+In the space that remains, I wish to briefly say something about the second objection to
+notice-and-consent, which targets its presupposition that data restrictions are imposed
+almost exclusively for the protection of individual users. Against this, as Susser says, many
+critics have argued that ‘... what is at issue in [data practices] is often a social rather than
+individual interest. In such cases individuals should not be deciding about it in the first
+place’. 33
+The point that data practices can affect third-party interests, including perhaps broad
+social interests, is well taken. Here are three examples. First, at an individual level, the col-
+lection and use of one person’s data can facilitate inferences about nonconsenting third
+parties, thus potentially undermining their privacy. For example, if enough people volun-
+tarily disclose their sexual orientations, this might facilitate reliable inferences about the
+sexual orientations of people who did not (and do not want to) reveal this. Second, this
+time at a broader social level, there may be important values – like autonomy and freedom
+of speech – that mass surveillance is inimical to. For example, Richards (2013) argues that
+a society in which everybody’s research habits (e.g. search histories) are constantly mon-
+itored may be one in which people are driven to intellectual conformity. Finally, mass sur-
+veillance may lead to dangerous amalgamations of power in various entities, private and
+© 2022 The Author. Journal of Applied Philosophy published by John Wiley & Sons Ltd on behalf of Society for Applied Philosophy.
+Consent and the Right to Privacy 11
+public. For example, Richards also argues that mass surveillance can facilitate blackmail,
+discrimination, manipulation, and the selective enforcement of laws. 34
+I do not dispute the importance of these arguments, although I worry about some of the
+details. I do, however, dispute the claim that individuals should automatically be disabled
+from making some decision merely because it affects third-party interests (whether of
+other individuals or of society generally). Our decisions, involving consent or otherwise,
+very frequently affect third-party interests, e.g. when I host a dinner party and thus subject
+my neighbors to increased noise. Sometimes this is legitimate and sometimes it is not, but
+the mere observation that an interest has been set back does not by itself make the case.
+This is true even for broad social interests, especially when these interests are affected
+not by unilateral decree, but in an emergent way from the decisions of various individuals.
+For example, the ubiquity of cell phones is transforming society in many ways, some big,
+some small, and not all of them good (consider e.g. how the persistent availability of cell
+phones transforms work culture). But this does not mean that people should be prohibited
+from purchasing or using cell phones. Society is comprised of its members, and their deci-
+sions can have cumulative implications for social values without any impropriety.
+It might be helpful to distinguish two possible justifications for consent here: first, an
+individual’s consent is solicited to legitimate the effects something has on third-party
+interests; and second, an individual’s consent is solicited to legitimate something, and that
+thing affects third-party interests.
+The second style of justification is extremely common and not at all improper. To apply
+this to the present context, assume certain data practices conflict with certain social
+values, e.g. because they facilitate reliable inferences about the sensitive information of
+nonconsenting third parties. This is only part of the justificatory story; we must also con-
+sider any values these data practices facilitate, both to the individuals who participate, and
+(potentially) to society generally. If these are significant enough – e.g. if they make impor-
+tant technologies significantly better – then it may well be worth permitting these data
+practices, costs to other values notwithstanding. Assuming they should be permitted,
+the only question that remains is whose consent, if anybody’s, should be required to legit-
+imate them. If these practices rely on extensive data collection, there is a strong case to be
+made, on grounds of both legitimacy and desirability, that the people whose data is
+employed should at least be included here. There is thus nothing absurd in requiring indi-
+vidual consent for something that affects social values, at least if the purpose of consent is
+not to justify these effects but is instead to legitimate something that has them as a
+consequence.
+Note also that the first style of justification may sometimes be valid as well, precisely for
+broad social values, especially those pertaining to privacy. To focus on the matter at hand,
+many of our privacy norms are essentially a series of informally negotiated boundaries that
+demarcate certain conventional zones of privacy. 35 I do not mean to suggest that privacy is
+arbitrary, or valuable only in some sort of relativistic sense. But I do mean to suggest that
+the precise contours of our privacy norms are to some extent conventional, and insofar as
+they are, it is legitimate for society, especially as a collective enterprise, to redraw them.
+Individuals systematically choosing to waive entitlements that fall within this zone may
+be one legitimate mechanism for doing this. I do not want to overstate the case here, as this
+process can go awry for various reasons (especially when people have weak information)
+and its powers of legitimation are not unlimited. But it is another respect in which broad
+© 2022 The Author. Journal of Applied Philosophy published by John Wiley & Sons Ltd on behalf of Society for Applied Philosophy.
+12 Kevin Mills
+social values are not in principle beyond the legitimate purview of individual consent
+decisions.
+5. Conclusion
+I conclude that user consent to data practices is in principle considerably more robust, and
+more important, than the standard criticisms of notice-and-consent suggest. This does
+not mean that notice-and-consent makes for good data policy; data subjects are vulnerable
+to exploitation, and there are good reasons to suspect they have been (and will continue to
+be) taken advantage of absent substantive legislation that protects them (although there
+are also some reasons for optimism). What it does mean is that user consent can, in the
+right circumstances, legitimate data practices which would otherwise be illegitimate –
+even complicated ones which are extremely costly to avoid. It also means that user consent
+must be solicited if such practices are to be deployed legitimately (and to reiterate, there
+are sometimes good reasons that favor doing so). It is thus important that our data policies
+continue to emphasize user consent, although exactly what this should look like
+(e.g. which auxiliary protections should also be implemented and how significantly these
+should deviate from the current system) is not a matter I have explored here.36
