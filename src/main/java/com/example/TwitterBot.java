@@ -20,6 +20,8 @@ import java.util.ArrayList;
 import java.util.List;
 // Showcase Project: Discord and Twitterbot
 //Lizzy Mackenroth
+//This project was to use Twitter and Discord API to create a working bot for both that posted my generated sentences
+//the sentences are made from running my philosophy texts from my Tech philosophy class through my Markov generator and generate based on it 
 //THIS IS THE MAIN CLASS FOR THE Twitter BOT, RUN THIS FOR Twitter BOT; 
 
 public class TwitterBot {
@@ -46,7 +48,6 @@ public class TwitterBot {
 
 
 	private static final TwitterInteraction twitter = new TwitterInteraction(); // handles twitter api
-	private static final MyListener philBot = new MyListener();	
 	
 
 	public static void main(String[] args) {
@@ -57,46 +58,40 @@ public class TwitterBot {
 		ArrayList<String> novelTokens = parseTextFile(); // turns the text (a String) into an ArrayList<String> of words
 															// (that is, it parses the text)
 		System.out.println("Token size:" + novelTokens.size());// how many words/punctuation (i.e., tokens) in the novel
-		// System.out.println(novelTokens);
 		// TODO: import, create and train an your Markov Chain to generate text for
 		
 
 
-
+			//creates a markov of M object and sets to what order it will tokenize
 			MOrderMarkovGenerator<String> word = new MOrderMarkovGenerator<String>(3);
-			word.trainM(novelTokens);			
-			//MarkovChainGenerator<String> trainWords = new MarkovChainGenerator<String>();
+			//train my file
+			word.trainM(novelTokens);	
+			//create an arraylist to hold my generated string		
 			ArrayList<String> newWords= new ArrayList<String>();
+			//generate my sentence and set how many words I want
 			newWords = word.generate(30); 
 			//(newWords);
 			//cleanText(newWords);
-
+			//string to hold my cleaned sentence
 			String words = "";
-				
+
+			//loop through every word	
 			for(int i = 0; i < newWords.size(); i++){
 				
 				
 				String oneWord = newWords.get(i);
+				//cleans punctuation 
 				oneWord.replaceAll("[^\\sa-zA-Z0-9]", "") ;
-				// if(oneWord == "("){
+				//get rid of numbers
 				oneWord.replaceAll(fNUMBERS, "") ;
-
-				// 	System.out.print(newWords.get(i));
-				// }
-				// if(oneWord == ")"){
-				// 	System.out.print(newWords.get(i-1) + newWords.get(i) + " ");
-				// }
-				// if(oneWord == "."){
-				// 	System.out.print(newWords.get(i-1) + newWords.get(i) + " ");
-				// }
-				
-				//System.out.print(newWords.get(i) + " ");
+				//adds words back in
 				words += newWords.get(i) + " ";
 				
 
 
 				
 			}
+			//print to console
 			System.out.print(words);
 			//MyListener Listen = new MyListener(words);
 		
