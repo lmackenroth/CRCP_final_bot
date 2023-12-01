@@ -19,7 +19,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class App {
+public class YourStringGenerator {
 
 	// make cross-platform
 	static FileSystem sys = FileSystems.getDefault();
@@ -28,9 +28,7 @@ public class App {
 	static String filePath = "data" + sys.getSeparator() + "phil (1).txt"; // path to the midi file -- you can
 																			// change this to your file //
 																			// location/nam
-	static Scraper scraper = new Scraper(); // for scraping webpages
-
-	private static int TWITTER_CHAR_LIMIT = 200; // CB: I don't remember the current char limit. You can change this if
+	 // CB: I don't remember the current char limit. You can change this if
 													// you want to reflect reality.
 
 	// these constant strings containing types of characters for filtering out, etc.
@@ -41,20 +39,10 @@ public class App {
 	private static final String fWHITESPACE = "\t\r\n ";
 	private static final String fNUMBERS = "1234567890 ";
 
-
-	private static final TwitterInteraction twitter = new TwitterInteraction(); // handles twitter api
-
-	public static void main(String[] args) {
-
-		// TODO: comment if you are not training via a text file
-		// loads the novel referenced by filePath -- remember to change variable names
-		// if you are not training on a novel....
-		ArrayList<String> novelTokens = parseTextFile(); // turns the text (a String) into an ArrayList<String> of words
-															// (that is, it parses the text)
-		System.out.println("Token size:" + novelTokens.size());// how many words/punctuation (i.e., tokens) in the novel
-		// System.out.println(novelTokens);
-		// TODO: import, create and train an your Markov Chain to generate text for
-		
+    public static String generateString() {
+    	
+		ArrayList<String> novelTokens = parseTextFile(); 
+		System.out.println("Token size:" + novelTokens.size());
 
 
 
@@ -62,7 +50,9 @@ public class App {
 			word.trainM(novelTokens);			
 			//MarkovChainGenerator<String> trainWords = new MarkovChainGenerator<String>();
 			ArrayList<String> newWords= new ArrayList<String>();
+            System.out.println("start generate");
 			newWords = word.generate(30); 
+            System.out.println("End generate");
 			//(newWords);
 			//cleanText(newWords);
 
@@ -76,16 +66,6 @@ public class App {
 				// if(oneWord == "("){
 				oneWord.replaceAll(fNUMBERS, "") ;
 
-				// 	System.out.print(newWords.get(i));
-				// }
-				// if(oneWord == ")"){
-				// 	System.out.print(newWords.get(i-1) + newWords.get(i) + " ");
-				// }
-				// if(oneWord == "."){
-				// 	System.out.print(newWords.get(i-1) + newWords.get(i) + " ");
-				// }
-				
-				//System.out.print(newWords.get(i) + " ");
 				words += newWords.get(i) + " ";
 				
 
@@ -93,45 +73,11 @@ public class App {
 				
 			}
 			System.out.print(words);
-
-
-		//Heres what I want to do!!
-		//if there is white space before punctuation, delete white space
-		
-
-
-		// trains the array list
-		// maybe make a for loop the length of novelTokens and delete a token if funky
-		
-
-		// 1.things to make better
-		// delete words after the last period from newSentence
-		// delete quotations before
-		// make sure sentence isn't too short? maybe set to certain amount of tokens
-		// produced
-		// make my markov of M work
-
-		// NOTE: In the end, text should be more or less intelligible. It does not have
-		// to be perfect, but it should be somewhat coherent.
-		// Feel free to generate a lot and then delete the tweets that don't make sense
-		// and keep ones that are amusing/surprising, etc. on your page.
-
-		// I am NOT doing webscrapping
-
-		// TODO: uncomment the code before to post to twitter
-		// Make sure within Twitter limits (used to be 140 but now is more?)
-		//String status = "I am testing again with new auth and app. Sweet!";
-		twitter.updateTwitter(words); //uncomment this to update twitter
-
-	}
+        return words;
+    }
 	
 
-	// private static String removePunctuation(String input) {
-	// // Using regular expression to remove punctuation
-	// return input.replaceAll("\\p{Punct}", "");
-	// }
-
-	// parses the text file into tokens -- does not necessarily need to be altered
+	
 	static ArrayList<String> cleanText(ArrayList<String> cleanThis){
 			for(int i = 0; i < cleanThis.size(); i++){
 				cleanThis.get(i).replaceAll(fPUNCTUATION, "");
@@ -149,10 +95,7 @@ public class App {
 		Path path = Paths.get(filePath);
 		ArrayList<String> tokens = new ArrayList<String>();
 
-		try { // NOTE: this is a try-catch block. It's a way to handle errors. You can read
-				// about it online. It's not necessary for you to understand it for this class.
-				// Basically, the following code might fail, so we need to catch the errors and
-				// handle it.
+		try { 
 
 			List<String> lines = Files.readAllLines(path);
 

@@ -130,9 +130,22 @@
   </dependency>
 
   <dependency>
+    <groupId>ch.qos.logback</groupId>
+    <artifactId>logback-classic</artifactId>
+    <version>1.2.8</version>
+</dependency>
+
+  <dependency>
+    <groupId>net.dv8tion</groupId>
+    <artifactId>JDA</artifactId>
+    <version>5.0.0-beta.18</version>
+  </dependency>
+
+  <dependency>
     <groupId>io.github.takke</groupId>
     <artifactId>jp.takke.twitter4j-v2</artifactId>
     <version>1.4.2</version>
+
   </dependency>
 
     <dependency>
